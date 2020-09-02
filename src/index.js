@@ -6,13 +6,16 @@ const style = {
     color:'white'
 };
 
-const App = () => (
-    <div>
-        <label className="label" htmlFor="name">Name:</label>
-        <input id="name" type="text" />
-        <button style={style}>Submit</button>
-    </div>
-);
+const App = () => { 
+    const buttonText = 'Submit';
+    return (
+        <div>
+            <label className="label" htmlFor="name">Name:</label>
+            <input id="name" type="text" />
+            <button style={style}>{buttonText}</button>
+        </div>
+    )
+};
 
 
 ReactDOM.render(<App />, document.querySelector('#root'));
