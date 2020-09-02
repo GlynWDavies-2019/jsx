@@ -6,13 +6,14 @@ const style = {
     color:'white'
 };
 
+const buttonText = () => 'Click Here';
+
 const App = () => { 
-    const buttonText = 'Submit';
     return (
         <div>
             <label className="label" htmlFor="name">Name:</label>
             <input id="name" type="text" />
-            <button style={style}>{buttonText}</button>
+            <button style={style}>{buttonText()}</button>
         </div>
     )
 };
